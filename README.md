@@ -7,6 +7,17 @@ pip install -r requirements.txt
 python setup.py install
 ```
 
+## Download model
+```
+!wget https://bj.bcebos.com/v1/paddledet/models/pipeline/mot_ppyoloe_l_36e_pipeline.zip
+!wget https://bj.bcebos.com/v1/paddledet/models/pipeline/dark_hrnet_w32_256x192.zip
+!wget https://bj.bcebos.com/v1/paddledet/models/pipeline/STGCN.zip
+
+!unzip -d output_inference mot_ppyoloe_l_36e_pipeline.zip
+!unzip -d output_inference dark_hrnet_w32_256x192.zip
+!unzip -d output_inference STGCN.zip
+```
+
 ## Inference
 ```
 python deploy/pipeline/pipeline.py \
